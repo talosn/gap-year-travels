@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap Year Travels</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #01417a; /* Malaysian flag blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #e01c1c; /* Malaysian flag red */
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 0;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ffcd00; /* Malaysian flag yellow */
+            color: #01417a;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about, .booking, .contact, .gallery {
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        h2 {
+            color: #01417a;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .contact form input, 
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #e01c1c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact form button:hover {
+            background-color: #01417a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #01417a;
+            color: white;
+        }
+
+        /* Gallery Flexbox */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gap Year Travels</h1>
+        <p>Your Adventure in Malaysia Starts Here!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Gap Year Travels specializes in unforgettable trips across Malaysia. From the bustling streets of Kuala Lumpur to the serene beaches of Langkawi, we create personalized experiences that suit every traveler. Our goal is to make your gap year adventure seamless, exciting, and culturally immersive.</p>
+    </section>
+
+    <section id="booking" class="booking">
+        <h2>Book a Trip</h2>
+        <p>Booking a trip with us is simple! Choose your destination, select the dates, and our team will handle the rest. We offer a variety of packages tailored to different interests and budgets.</p>
+        <button onclick="alert('Booking form coming soon!')">Book Now</button>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Explore Malaysia</h2>
+        <div class="gallery-container">
+            <img src="https://source.unsplash.com/300x200/?malaysia,beach" alt="Malaysia Beach">
+            <img src="https://source.unsplash.com/300x200/?malaysia,city" alt="Malaysia City">
+            <img src="https://source.unsplash.com/300x200/?malaysia,jungle" alt="Malaysia Jungle">
+            <img src="https://source.unsplash.com/300x200/?malaysia,mountains" alt="Malaysia Mountains">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gap Year Travels. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
